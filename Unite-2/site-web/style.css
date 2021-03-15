@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.haut {
+    width:5px;
+    height:5px;
+    position:absolute;
+    top:5%;
+    right:5%;
+    z-index:99;
+}
+.bas > img, .haut> img {
+    width:50px;
+    height:50px;
+}
+.bas {
+    width:5px;
+    height:5px;
+    position:absolute;
+    bottom:10%;
+    right:5%;
+    z-index:99;
+}
+
+#couverture {
+    height:100vh;
+    background:url('couverture-cote.jpg');
+    background-size:cover;
+    color:#FFF;
+    position: relative;
+}
+#couverture > div {
+    position:absolute;
+    top:50%;
+    left:65%;
+    transform:translate(-65%, -50%);
+    text-align:center;
+    background:#EEE;
+    padding: 0.25em;
+    font-size:70px;
+    font-weight:1000;
+    color:black;
+    mix-blend-mode: lighten;
+}
+/*
+#couverture > div > h1 {
+width:100%;
+font-size:3em;
+padding:10% 0%;
+font-family: 'Roboto', sans-serif;
+mix-blend-mode: screen;
+}
+ */
+#couverture > div > a {
+    font-size:1.5em;
+    color:#000;
+    text-decoration: none;
+    background:none;
+}
+:is(#ASA, #IDR) > div {
+    display:block;
+    position:relative;
+}
+:is(#ASA, #IDR) > div::after {
+    height:100vh;
+    content: "";
+    background: url(ap.png);
+    background-size:cover;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.emploi {
+    height:100vh;
+    position: relative;
+    color:#FFF;
+}
+.emploi > div > img {
+    height:300px;
+    position:absolute;
+    right:10%;
+    top:55%;
+    transform:translate(-10%,-50%);
+    filter: drop-shadow(15px 8px rgba(11,11,11, 0.95));
+    border: white 3px solid;
+}
+.emploi h1 {
+    padding:0.5em 1em 1em 1em;
+    font-size:4em;
+    font-family: 'Roboto', sans-serif;
+}
+.emploi :is(ul, ol) {
+    margin-left:5%;
+}
+.emploi li {
+    padding:1em;
+    color:#f77f00;
+    background:#07557d;
+    width:35%;
+    margin:0.5em 1em;
+    list-style-position: inside;
+    font-size:2em;
+    font-weight:1000;
+    filter: drop-shadow(10px 8px rgba(11,11,11, 0.95));
+    position:relative;
+}
+.emploi a {
+    color:#f77f00;
+    text-decoration: none;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.emploi-boite h1 {
+    font-weight:1000;
+    /*background: linear-gradient(-45deg, #3d70b8, #71a2c1, #a8dadc, #f1faee);*/
+    /*background: linear-gradient(-45deg, #4cc9f0, #4cc9f0, #4361ee, #3a0ca3, #b5179e, #f72585 );*/
+    background: linear-gradient(-45deg, #003049, #d62828, #f77f00, #fcbf49, #eae2b7);
+    background-size: 400% 400%;
+    animation: gradient 7.5s ease-in-out infinite;
+    background-clip:text;
+    -moz-background-clip:text;
+    -webkit-background-clip:text;
+    text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;
+    filter: drop-shadow(5px 5px rgba(00, 00, 00, 0.95));
+}
+li:hover a, li:hover {
+    background:#d4cfc9;
+    color:#333230;
+}
+li:hover {
+    filter: drop-shadow(6px 8px rgba(11,11,11, 0.95));
+    left:4px;
+}
+body, main {
+    /*
+    background:url('ap-contenu.png');
+     */
+}
+
+main {
+    background:url('ap-contenu.png');
+    height:100vh;
+    color:#FFF;
+    padding:5%;
+    width: 75%;
+    margin:0 auto;
+}
+h1 {
+    font-size: 4em;
+}
+p {
+    background: rgba(111,111,111, 0.85);
+    font-size: 1.5em;
+    padding: 1em 2em;
+    margin-bottom: 2em;
+
+}
+
