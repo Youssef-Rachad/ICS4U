@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body, main {
+    background:url('ap-contenu.png');
+}
+
+main {
+    background:url('ap-contenu.png');
+    height:100vh;
+    color:#FFF;
+    padding:5%;
+    width: 75%;
+    margin:0 auto;
+}
+h1 {
+    font-size: 4em;
+}
+p, ul, ol {
+    background: rgba(111,111,111, 0.85);
+    font-size: 1.5em;
+    padding: 1em 2em;
+
+}
+.retour {
+    padding: 5px 10px;
+    color:#FFF;
+    background:#ffbf00;
+    margin:5px 10px;
+    list-style-position: inside;
+    font-size: 1.25em;
+    text-decoration: none;
+    position: absolute;
+}
+.retour:hover {
+    background:#d4cfc9;
+    color:#333230;
+
+}
