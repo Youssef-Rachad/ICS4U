@@ -105,7 +105,7 @@ mix-blend-mode: screen;
     padding:1em;
     color:#f77f00;
     background:#07557d;
-    width:35%;
+    width:100%;
     margin:0.5em 1em;
     list-style-position: inside;
     font-size:2em;
@@ -116,7 +116,10 @@ mix-blend-mode: screen;
 .emploi a {
     color:#f77f00;
     text-decoration: none;
-
+}
+.emploi :is(ul, ol) a {
+    display: block;
+    width: 35%;
 }
 @keyframes gradient {
     0% {
@@ -149,7 +152,8 @@ li:hover a, li:hover {
     color:#333230;
 }
 li:hover {
-    filter: drop-shadow(6px 8px rgba(11,11,11, 0.95));
+    filter: drop-shadow(6px 4px rgba(11,11,11, 0.95));
+    top: 4px; 
     left:4px;
 }
 body, main {
