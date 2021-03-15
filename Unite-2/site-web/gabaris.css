@@ -4,12 +4,11 @@
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
 }
-body, main {
+body {
     background:url('ap-2.png');
 }
 
 main {
-    background:url('ap-2.png');
     height:100vh;
     color:#FFF;
     padding:5%;
