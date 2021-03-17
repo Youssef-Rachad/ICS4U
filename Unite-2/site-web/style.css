@@ -105,8 +105,8 @@ mix-blend-mode: screen;
 }
 .emploi li {
     padding:1em;
-    color:#f77f00;
-    background:#07557d;
+    background:#d4cfc9;
+    color:#333230;
     width:100%;
     margin:0.5em 1em;
     list-style-position: inside;
@@ -150,8 +150,8 @@ mix-blend-mode: screen;
     filter: drop-shadow(5px 5px rgba(00, 00, 00, 0.95));
 }
 li:hover a, li:hover {
-    background:#d4cfc9;
-    color:#333230;
+    color:#f77f00;
+    background:#07557d;
 }
 li:hover {
     filter: drop-shadow(6px 4px rgba(11,11,11, 0.95));
