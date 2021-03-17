@@ -5,7 +5,6 @@
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 .haut {
     width:5px;
     height:5px;
@@ -35,17 +34,6 @@
     position: relative;
 }
 #couverture > div {
-    position:absolute;
-    top:50%;
-    left:65%;
-    transform:translate(-65%, -50%);
-    text-align:center;
-    background:#EEE;
-    padding: 0.25em;
-    font-size:70px;
-    font-weight:1000;
-    color:black;
-    mix-blend-mode: lighten;
 }
 /*
 #couverture > div > h1 {
@@ -56,11 +44,25 @@ font-family: 'Roboto', sans-serif;
 mix-blend-mode: screen;
 }
  */
-#couverture > div > a {
-    font-size:1.5em;
-    color:#000;
+#couverture-lien {
+    position:absolute;
+    top:50%;
+    left:65%;
     text-decoration: none;
-    background:none;
+
+    transform:translate(-65%, -50%);
+    text-align:center;
+    background:#EEE;
+    padding: 0.25em;
+    font-size:70px;
+    font-weight:1000;
+    color:black;
+    mix-blend-mode: lighten;
+
+}
+#debut {
+    position:relative;
+    font-size:1.5em;
 }
 :is(#ASA, #IDR) > div {
     display:block;

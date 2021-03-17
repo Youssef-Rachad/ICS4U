@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap&family=Lato:ital,wght@0,400;0,700;1,400;1,700');
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 body {
     background:url('ap-2.png');
@@ -17,6 +18,7 @@ main {
 }
 h1 {
     font-size: 4em;
+    font-family: 'Lato', sans-serif;
 }
 p, ul, ol {
     background: rgba(111,111,111, 0.85);
