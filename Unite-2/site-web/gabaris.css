@@ -28,8 +28,8 @@ p, ul, ol {
 }
 .retour {
     padding: 5px 10px;
-    color:#FFF;
-    background:#ffbf00;
+    background:#d4cfc9;
+    color:#333230;
     margin:5px 10px;
     list-style-position: inside;
     font-size: 1.25em;
@@ -37,7 +37,7 @@ p, ul, ol {
     position: absolute;
 }
 .retour:hover {
-    background:#d4cfc9;
-    color:#333230;
+    color:#FFF;
+    background:#ffbf00;
 
 }
