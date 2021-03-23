@@ -1,4 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    font-size:16px;
+}
+@media only screen and (max-width:800px){
+    :root {
+        font-size: 12px;
+    }
+    .emploi>div>img {
+        max-width: 50%;
+        right: 0% !important;
+    }
+    #couverture-lien {
+        top: 25% !important;
+        left: 75% !important;
+    }
+    .emploi-boite h1 {
+        height:16rem !important;
+    }
+}
+@media only screen and (max-height:650px) {
+    :root {
+        font-size: 12px;
+    }
+    .emploi li {
+        height:4rem !important;
+        padding-top:1rem !important;
+        padding-bottom:1rem !important;
+        margin-top:1rem !important;
+        margin-bottom:1rem !important;
+    }
+    .emploi>div>img {
+        top: 60% !important;
+    }
+
+}
 * {
     margin:0;
     padding:0;
@@ -6,20 +41,20 @@
     font-family: 'Roboto', sans-serif;
 }
 .haut {
-    width:5px;
-    height:5px;
+    width:0.25rem;
+    height:0.25rem;
     position:absolute;
     top:15%;
     right:10%;
     z-index:99;
 }
 .bas > img, .haut> img {
-    width:75px;
-    height:75px;
+    width:4.5rem;
+    height:4.5rem;
 }
 .bas {
-    width:5px;
-    height:5px;
+    width:0.25rem;
+    height:0.25rem;
     position:absolute;
     bottom:20%;
     right:10%;
@@ -33,17 +68,6 @@
     color:#FFF;
     position: relative;
 }
-#couverture > div {
-}
-/*
-#couverture > div > h1 {
-width:100%;
-font-size:3em;
-padding:10% 0%;
-font-family: 'Roboto', sans-serif;
-mix-blend-mode: screen;
-}
- */
 #couverture-lien {
     position:absolute;
     top:50%;
@@ -54,7 +78,7 @@ mix-blend-mode: screen;
     text-align:center;
     background:#EEE;
     padding: 0.25em;
-    font-size:70px;
+    font-size:4.5rem;
     font-weight:1000;
     color:black;
     mix-blend-mode: lighten;
@@ -64,11 +88,11 @@ mix-blend-mode: screen;
     position:relative;
     font-size:1.5em;
 }
-:is(#ASA, #IDR) > div {
+:is(#ASA, #IDR, #GPT, #DDL) > div {
     display:block;
     position:relative;
 }
-:is(#ASA, #IDR) > div::after {
+:is(#ASA, #IDR, #GPT, #DDL) > div::after {
     height:100vh;
     content: "";
     background: url(ap.png);
@@ -87,7 +111,7 @@ mix-blend-mode: screen;
     color:#FFF;
 }
 .emploi > div > img {
-    height:300px;
+    height:18.75rem;
     position:absolute;
     right:10%;
     top:55%;
@@ -148,6 +172,8 @@ mix-blend-mode: screen;
     -moz-text-fill-color:transparent;
     -webkit-text-fill-color:transparent;
     filter: drop-shadow(5px 5px rgba(00, 00, 00, 0.95));
+    font-size:4rem;
+    height:8rem;
 }
 li:hover a, li:hover {
     color:#f77f00;
