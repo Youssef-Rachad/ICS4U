@@ -1,3 +1,3 @@
 # Site sommatif
 
-[https://github.com/Youssef-Rachad/ICS4U/new/main/Unite-2/sommatif]Venez-voir!
+[Venez-voir!](https://github.com/Youssef-Rachad/ICS4U/new/main/Unite-2/sommatif)
