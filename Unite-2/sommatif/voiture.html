@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="voiture.css">
+
+    </head>
+
+    <script>
+        function ouvre_ferme(){
+                    window.getComputedStyle(document.getElementById('monNav')).display==='none'? document.getElementById('monNav').style.display = 'block' : document.getElementById('monNav').style.display = 'none';
+                }
+    </script>
+
+    <body>
+        <header>
+            <h1>LE PROGRÈS DE L'INTELLIGENCE ARTIFICIELLE</h1>
+            <button onclick="ouvre_ferme()" id="btnNav">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="8" fill="white"></rect>
+                </svg>
+            </button>
+        </header>
+
+        <nav id="monNav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        &#127968;
+                    </a>
+                </li>
+                <li>
+                    <a href="ordi.html">
+                        Les composantes ordinateurs
+                    </a>
+                </li>
+                <li>
+                    <a href="voiture.html">
+                        L'autoconduite des voitures
+                    </a>
+                </li>
+                <li>
+                    <a href="iot.html">
+                        L'Internet des Choses
+                    </a>
+                </li>
+                <li>
+                    <a href="ethique.html">
+                        L'éthique de l'IA
+                    </a>
+                </li>
+                <li>
+                    <a href="bibliographie.html">
+                        Bibliographie
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class=parallelogram id="tesla">
+            <h1>ELON MUSK</h1>
+            <span>
+                <img src="elon.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnbc.com%2F2021%2F03%2F17%2Ftesla-in-a-bubble-and-its-going-down-fund-manager-says.html&psig=AOvVaw0uCgh7Pdqe7otSrm0A67Pl&ust=1616879587067000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDbx4fwzu8CFQAAAAAdAAAAABAO" id="elon">
+                <span><h2>Elon Musk & Tesla</h2><p>Elon Musk et le fondateur de Tesla, la compagnie pionière des voitures électriques.</p></span>
+
+            </span>
+        </div>
+        <div class=parallelogram id="commaai">
+            <h1>GOERGE HOTZ</h1>
+            <span>
+                <img src="george.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fiottechnews.com%2Fnews%2F2018%2Fsep%2F12%2Fgeorge-hotz-driverless-startup-comma-ai%2F&psig=AOvVaw2hs14uJmDlS2i6EOQXglZ6&ust=1616946564547000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi29czp0O8CFQAAAAAdAAAAABAD" id="george">
+                <span>
+                    <h2>George Hotz & Comma.ai</h2><p>Depuis ses jours à Facebook, George Hotz s'est concetré sur la conduite autonome. Son but n'est pas de créer une voiture autonome, mais plutôt de développer la pièce manquante qui permettrait à une voiture de s'<span class="itallique">auto</span>conduire.</p>
+                </span>
+            </span>
+        </div>
+        <main>
+            <h1>Comment l'IA révolutionne-t-elle la conduite autonome?</h1>
+            <p>
+            Avez-vous vu les voitures avec des caméras sur le toit?
+            <br><br>
+            Depuis l’année 2010, l’idée de ne plus conduire a fait rage. On cherche à remplacer les conducteurs humains, qui sont à la fois imparfaits et susceptibles à des stresses externes, par des Intelligences Artificielles connues pour leurs performances consistantes. Le but de cette aventure est d’enseigner la conduite de sorte à l’effectuer de manière algorithmique.
+            <div class="citation">
+                <span>
+                    Le but de cette aventure est d’enseigner la conduite de sorte à l’effectuer de manière algorithmique.
+                </span>
+            </div>
+
+            Afin d’y parvenir, la voiture doit être munies de plusieurs capteurs :
+            <ul style="padding:1rem 0;">
+                <li>
+                    d’abords pour sensibiliser l’IA aux conditions de la conduite (pluie, neige, vent, température)
+                </li>
+                <li>
+                    puis de caméras, des capteurs LiDAR et des capteurs infrarouges pour analyser les objets autour de la voiture.
+                </li>
+            </ul>
+            Cette dernière catégorie est essentielle à la modélisation 3D de l’environnement autour de la voiture. Grâce aux LiDAR, ou light detection and ranging, la voiture peut se situer sur la route, par rapport aux autres voitures. En plus de reconnaître ses paires (technologiquement amélioré ou non), le système de vision doit aussi reconnaître divers obstacles tels les motocyclistes, les piétons, les animaux, les objets qui contrôlent la circulation et tout autre chose que la voiture puisse heurter. La vision de la voiture fait de son mieux afin de peindre le paysage topographique le plus détaillé afin de rendre la tâche de l’ordinateur analyseur plus précis.
+            <br><br>
+            En fait, il n’est pas difficile de faire reconnaître l’environnement à un ordinateur; le vrai travail se fait lorsque l’IA doit tenir compte de plusieurs facteurs et contrôler les actions de la voiture, tout en se basant sur une gamme de données, qui elle-même doit être optimisée. En effet, les calculs exécuté par milliards
+            </p>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="couverture" class="page">
+
+            <nav class="navi" id="navi-petit">Menu</nav>
+            <nav class="navi hidden" id="navi-grand">
+                <ul>
+                    <li>
+                        <a href="ordi.html">
+                            Les composantes ordinateurs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="voiture.html">
+                            L'autoconduite des voitures
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iot.html">
+                            L'Internet des Choses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ethique.html">
+                            L'éthique de l'IA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bibliographie.html">
+                            Bibliographie
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3>En vedette</h3>
+            <h1>LE PROGRÈS DE &nbsp;<br>L'INTELLIGENCE ARTIFICIELLE &nbsp;</h1>
+            <section class="imgflex">
+                <section id="text-section">
+                    <h2>À quelle point sommes-nous rendus?</h2>
+                    <p id="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae enim leo. Sed sed ante eu mi pharetra placerat sed sed ipsum. Etiam sit amet augue est. Vestibulum augue enim, suscipit ac ante eget, gravida semper sem. Integer nec pellentesque diam. Suspendisse vulputate lorem quis enim viverra dictum. Suspendisse mattis sem et mauris tempus, vitae ornare sapien vulputate. Vestibulum libero est, rhoncus et bibendum nec, porta et tellus. Curabitur orci arcu, rhoncus ut erat vitae, aliquam tincidunt mi.
+                    </p>
+                </section>
+                <img src="ai.png" alt="404">
+            </section>
+        </div>
+        <footer class="bas2page">
+            <ul>
+                <li>Youssef R. 2021</li>
+                <li>ICS4U</li>
+                <li id="github_chat"><a href="https://github.com/Youssef-Rachad/ICS4U/tree/main/Unite-2/sommatif">
+                        Github
+                    </a></li>
+            </ul>
+        </footer>
+        <script>
+            document.getElementById('navi-petit').onclick = () => {
+                            document.getElementById('navi-petit').style.display = 'none';
+                            document.getElementById('navi-grand').style.display = 'block';
+                        }
+            document.getElementById('navi-grand').onclick = () => {
+                            document.getElementById('navi-grand').style.display = 'none';
+                            document.getElementById('navi-petit').style.display = 'block';
+                        }
+        </script>
+    </body>
+</html>

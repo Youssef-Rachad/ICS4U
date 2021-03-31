@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <script>
+        function ouvre_ferme(){
+                    window.getComputedStyle(document.getElementById('monNav')).display==='none'? document.getElementById('monNav').style.display = 'block' : document.getElementById('monNav').style.display = 'none';
+                }
+    </script>
+    <body>
+        <header>
+            <h1>LE PROGRÈS DE L'INTELLIGENCE ARTIFICIELLE</h1>
+            <button onclick="ouvre_ferme()" id="btnNav">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="8" fill="white"></rect>
+                </svg>
+            </button>
+        </header>
+
+        <nav id="monNav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        &#127968;
+                    </a>
+                </li>
+                <li>
+                    <a href="ordi.html">
+                        Les composantes ordinateurs
+                    </a>
+                </li>
+                <li>
+                    <a href="voiture.html">
+                        L'autoconduite des voitures
+                    </a>
+                </li>
+                <li>
+                    <a href="iot.html">
+                        L'Internet des Choses
+                    </a>
+                </li>
+                <li>
+                    <a href="ethique.html">
+                        L'éthique de l'IA
+                    </a>
+                </li>
+                <li>
+                    <a href="bibliographie.html">
+                        Bibliographie
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Comment les composantes ordinateurs ont-elles évoluées pour servir l'IA?</h1>
+            <p>
+            Lorsque l'on parle de composantes ordinateurs dans le doaine le l'intelligence artificielle, ont fait allusion à 4 composantes principales:
+            <ol>
+                <li>L'Unité de Traitement Centrale (CPU)</li>
+                <li>L'Unité de Traitement Graphique (GPU)</li>
+                <li>La puce FPGA (Field Programmable Gate Arrays)</li>
+                <li>Les circuits intégrés spécifiques à une application (ASIC)</li>
+            </ol>
+            Les FPGA et les ASIC servent à 2 fonctions, soit l’entraînement et l’inférence d’une IA. L’entraînement consiste à apprendre au programme comment performer sa tâche, tandis que l’inférence sert à appliquer les connaissances d’un programme déjà entraîné. Les FPGA ont l’avantage d’exécuter plusieurs calculs en parallèles de façon à réduire la concurrence plus efficacement qu’un processeur standard. D’ailleurs, il diffère du processeur standard en ne traitant aucun programme et ne gardant aucune mémoire. Il est aussi programmé de façon à s’adapter aux besoins d’un projet spécifique.
+
+
+            </p>
+        </main>
+
+    </body>
+</html>

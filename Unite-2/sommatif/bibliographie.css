@@ -1,0 +1,81 @@
+/*Styles par défaut*/
+header {
+    width:100vw;
+}
+header h1 {
+    font-size:2.5rem;
+    text-decoration:underline;
+    display:inline-block;
+}
+section {
+    width:80vw;
+    box-shadow:-1rem 1rem black;
+    margin-left:10vw;
+    margin-bottom:2rem;
+    border:0.25rem black solid;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+section h1 {
+    text-decoration:underline;
+    margin-left:1.5rem
+}
+section ol {
+    margin:1.5rem;
+}
+.cercle {
+    position:relative;
+    top:1rem;
+    width:1rem;
+    height:1rem;
+    background:#000;
+    border-radius:50%;
+    margin-right:1rem;
+}
+header button:hover {
+    animation: 0.5s linear 0s 1 weee;
+}
+#monNav {
+    display:none;
+    height:10vh;
+    position:absolute;
+    top:5rem;
+    width:100vw;
+}
+#monNav li {
+    float:left;
+    list-style:none;
+    font-size:1.25rem;
+    border:1px #0a1128 solid;
+
+}
+#monNav a {
+    padding:0.75rem;
+
+}
+#monNav li, #monNav a {
+    height:100%;
+    padding:1vh 0.5vw;
+
+}
+nav {
+    background:#eeeeee;
+}
+@keyframes weee {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+#btnNav {
+    position:absolute;
+    right:1rem;
+    top:1rem;
+    background:#000;
+    border:none;
+    padding:5px;
+    cursor:pointer;
+}

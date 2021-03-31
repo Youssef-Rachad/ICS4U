@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <script>
+            function ouvre_ferme(){
+                            window.getComputedStyle(document.getElementById('monNav')).display==='none'? document.getElementById('monNav').style.display = 'block' : document.getElementById('monNav').style.display = 'none';
+                        }
+        </script>
+
+        <header>
+            <h1>LE PROGRÈS DE L'INTELLIGENCE ARTIFICIELLE</h1>
+            <button onclick="ouvre_ferme()" id="btnNav">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="8" fill="white"></rect>
+                </svg>
+            </button>
+        </header>
+
+        <nav id="monNav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        &#127968;
+                    </a>
+                </li>
+                <li>
+                    <a href="ordi.html">
+                        Les composantes ordinateurs
+                    </a>
+                </li>
+                <li>
+                    <a href="voiture.html">
+                        L'autoconduite des voitures
+                    </a>
+                </li>
+                <li>
+                    <a href="iot.html">
+                        L'Internet des Choses
+                    </a>
+                </li>
+                <li>
+                    <a href="ethique.html">
+                        L'éthique de l'IA
+                    </a>
+                </li>
+                <li>
+                    <a href="bibliographie.html">
+                        Bibliographie
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--
+            <div class=parallelogram id="">
+            <h1></h1>
+            <span>
+            <img src="" alt="" id="">
+            <span><h2></h2><p></p></span>
+
+            </span>
+            </div>
+        -->
+
+        <main>
+            <h1>Comment l'Internet des Choses peut-elle améliorer notre vie?</h1>
+            L’IoT, l’internet des choses, est un concept qui vise à automatiser et à rendre encore plus « intelligent » plusieurs appareils en même temps. Ce concept, popularisé depuis 2015, est le prochain pas suivant le concept des appareils dit intelligents (téléphone intelligent, réfrigérateur intelligent, etc.) et bénéficie des récentes avancements des technologies des réseaux. L’IoT cherche à installer des capteurs sur les appareils afin de recollecter une gamme de données pertinentes et de les relayer à un système centralisé qui est responsable, à la fois, de compiler et d’analyser les données recueillies.
+            <br><br>            En fait, l’Internet de Choses atteint son plein potentiel lorsqu’elle est couplée à d’autres applications de l’intelligence artificielle. IBM, étant la compagnie en chef-de-fil dans plusieurs domaines de l’IA explique un scénario pratique où l’IA augmente le pouvoir de l’IoT et offre un service très plaisant :
+            <br><br> Imagine te réveiller à 7h00 chaque matin pour te rendre au travail où à l’école. D’ailleurs, tu t’y rends par train et tout va bien jusqu’au jour où une panne annule le train habituel. Tu pourrais conduire en voiture, toutefois ce trajet te mettre un quart d’heure en plus du délai due au trafic et aux conditions météo en retard; que faire?
+            <br><br> Dans un tel cas, ton réveil matin est la clé. En effet, brancher ton réveil à réseau et user du concept de l’IoT, il est possible pour les services de transport de t’aviser qu’une panne à lieu. Sauf que l’alerte ne te parvient pas directement. Au lieu, elle est redirigée vers ton réveil qui sonnera 15 minutes plus tôt afin de te donner la chance d’arriver à temps.
+
+
+        </main>
+
+        <!--
+            <section>
+            <canvas id="canvas" width="400" height="300">
+            This text is displayed if your browser does not support HTML5 Canvas.
+            </canvas>
+            </section>
+        -->
+
+        <script src="iot.js"></script>
+    </body>
+</html>

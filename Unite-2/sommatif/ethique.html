@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <script>
+        function ouvre_ferme(){
+                    window.getComputedStyle(document.getElementById('monNav')).display==='none'? document.getElementById('monNav').style.display = 'block' : document.getElementById('monNav').style.display = 'none';
+                }
+    </script>
+    <body>
+        <header>
+            <h1>LE PROGRÈS DE L'INTELLIGENCE ARTIFICIELLE</h1>
+            <button onclick="ouvre_ferme()" id="btnNav">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="30" width="100" height="20" rx="8" fill="white"></rect>
+                    <rect y="60" width="100" height="20" rx="8" fill="white"></rect>
+                </svg>
+            </button>
+        </header>
+
+        <nav id="monNav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        &#127968;
+                    </a>
+                </li>
+                <li>
+                    <a href="ordi.html">
+                        Les composantes ordinateurs
+                    </a>
+                </li>
+                <li>
+                    <a href="voiture.html">
+                        L'autoconduite des voitures
+                    </a>
+                </li>
+                <li>
+                    <a href="iot.html">
+                        L'Internet des Choses
+                    </a>
+                </li>
+                <li>
+                    <a href="ethique.html">
+                        L'éthique de l'IA
+                    </a>
+                </li>
+                <li>
+                    <a href="bibliographie.html">
+                        Bibliographie
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            Beaucoup des applications qui surviennent de l’IA nécessite la récolte, l’analyse et, souvent, le stockage d’information qui relève de la vie privée des utilisateurs. D’une part, il y a des personnes qui ne veulent pas user de ses technologies; on parle donc de situations où des informations personnelles sont récoltées sans consentement, voire à l’insu. D’autre part, il y a des personnes qui sont d’accord de bénéficier des progrès futuristes. Toutefois, elles ne veulent pas que leurs informations soient identifiables, ni compilées.
+            <br>
+            <div class="citation">
+                <span>
+                    [Artificial intelligence (AI) and robotics] have raised fundamental questions about what we should do with these systems, what the systems themselves should do, what risks they involve, and how we can control these. (Müller, 2020)
+                </span>
+            </div>
+
+            <br>
+            Les soucis pointent vers les risques qu’engendre la récolte de données par les compagnies développant les services d’intelligence artificielle. D’abord, il y a le manque de transparence : le fait de récolter sans aviser ou bien de récolter d’une manière qui, selon l’opinion de plusieurs, devrait être interdit. De plus, il y a le contrôle de l’information et le pouvoir qu’il apporte à ceux qui visent à dominer le monde de l’IA. Ce risque se manifeste dans la vente des données personnelles, possiblement à des malfaiteurs, et à la manipulation des publicités et produits auxquels nous sommes exposés, sur Internet par exemple.
+            <br><br>
+            On parle du droit « de demeurer inconnu », mais les progrès de l’IA soulèvent des questions inquiétant à propos des motivations qui poussent les compagnies à récolter nos informations personnelles. Si nous voulons nous protéger et éviter de créer un monde où la meilleure compagnie est celle qui le plus grand accès aux données personnelles des gens. Une solution possible viendrait certes du gouvernement et des législatures qu’il peut mettre en place pour maintenir la sécurité de la population générale en jonction avec des chercheurs qui établissent des normes d’éthiques plus robustes.
+
+        </main>
+
+    </body>
+</html>

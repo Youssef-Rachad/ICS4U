@@ -1,0 +1,86 @@
+.parallelogram {
+    width: 30vw;
+    height: 60vh;
+    transform: skew(15deg);
+    background: black;
+    position:absolute;
+}
+.parallelogram > span {
+    display:flex;
+    flex-direction:row;
+    transform: skew(-15deg);
+    height:100%;
+}
+.parallelogram > span > span {
+    width:50%;
+    margin-left:1rem;
+}
+.parallelogram h1 {
+    color:white;
+    font-weight:1000;
+    transform: skew(-15deg) rotate(75deg);
+    position:relative;
+}
+#tesla {
+    top: 35vh;
+    right: -25vw;
+    background:#fb5607;
+}
+#tesla:hover {
+    right: 0.5vw;
+    width:75vw;
+}
+#tesla:hover h1 {
+    top:120%;
+}
+#tesla > span {
+    margin-left:calc(30vh * 0.25);
+    height:80%;
+    display:none;
+}
+#tesla:hover > span {
+    display:flex;
+}
+#tesla h1 {
+    top:50%;
+    left:-50%;
+}
+#commaai {
+    top: 35vh;
+    left: -25vw;
+    background:#3a86ff;
+}
+#commaai:hover {
+    left: 0.5vw;
+    width:75vw;
+}
+#commaai:hover h1 {
+    top:120%;
+}
+#commaai > span {
+    margin-left:calc(0.25*30vh);
+    height:80%;
+    display:none;
+}
+#commaai h1 {
+    top:50%;
+    right:-50%;
+}
+#commaai:hover > span {
+    display:flex;
+}
+#elon {
+    height:100%;
+}
+#george {
+    height:100%;
+}
+
+@keyframes slideTesla {
+    from {
+        right: -25vw;
+    }
+    to {
+        right: 0.5vw;
+    }
+}

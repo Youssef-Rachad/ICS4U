@@ -1,0 +1,153 @@
+@media only screen and (max-width:800px) {
+    :root {
+        font-size:12px;
+    }
+    img {
+        display:none;
+    }
+    .imgflex {
+        margin:0;
+        padding:0;
+        justify-content:center;
+    }
+    #text-section {
+        width:100%;
+    }
+    #text {
+        width:100%;
+        font-size:1.5rem;
+    }
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background:white;
+}
+.page {
+    height:96vh;
+    color:white;
+    padding:5vh;
+    margin:1vw;
+    margin-top:1vh;
+    margin-bottom:1vh;
+    border:black 1rem solid;
+    position:relative;
+}
+#couverture {
+    font-size:1rem;
+    background:linear-gradient(90deg,
+    rgba(50,50,50,1) 0%,
+    rgba(30,30,30,1) 30%,
+    rgba(10,10,10,1) 45%,
+    rgba(0,0,0,1) 60%,
+    rgba(10,10,10,1) 65%,
+    rgba(30,30,30,1) 70%,
+    rgba(50,50,50,1) 100%);
+}
+.navi {
+    position:absolute;
+    right:0vw;
+    top:1vh;
+    background:#888;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    padding-top:1em;
+    padding-bottom:1em;
+    cursor:pointer;
+}
+#navi-grand {
+    display:none;
+}
+#navi-grand ul {
+    display:flex;
+    align-items: stretch;
+    justify-content:space-between;
+    width:100%
+}
+#navi-grand li {
+    list-style-type:none;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    border-left:solid 1px black;
+}
+
+h2, h3 {
+    font-family:'Lato', sans-serif;
+}
+h1, p {
+    font-family:'Merriweather', serif;
+}
+h1 {
+    font-size:3rem;
+    font-weight:700;
+    text-decoration:underline;
+}
+h2 {
+    padding-left:1.25em;
+    padding-right:0;
+    margin-right:0;
+    display:inline;
+}
+h3 {
+    font-size:0.75em;
+}
+p {
+    margin-top:2em;
+    padding:1.25em;
+    max-width:60vw;
+    font-size:1rem;
+}
+img {
+    background-image:url('gears.gif');
+    background-clip:border-box;
+    padding:1rem;
+    width:30vw;
+    margin:1rem;
+    margin-top:0;
+    /*border:5px solid white;
+    box-shadow:5px 5px #222 5px;*/
+}
+.imgflex {
+    display:flex;
+    margin-top:3em;
+}
+.hidden {
+    display:none;
+}
+.bas2page {
+    background:#333333;
+    color:#FFFFFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:3rem;
+
+}
+.bas2page ul {
+    list-style-type: none;
+    margin:0 auto;
+}
+.bas2page li {
+    float:left;
+    margin-left:5vw;
+}
+a {
+    text-decoration:none;
+    color:white;
+}
+#github_chat {
+    position:relative;
+    display:block;
+}
+#github_chat::after {
+    content:'';
+    position:absolute;
+    top:-0.5rem;
+    left:3rem;
+    width:32px;
+    height:32px;
+    background:url('github.png') no-repeat bottom;
+}
