@@ -13,8 +13,8 @@
         <div id="couverture" class="page">
 
             <!-- Barre de navigation -->
-            <nav class="navi" id="navi-petit">Menu</nav>
-            <nav class="navi hidden" id="navi-grand">
+            <nav class="navi_index" id="navi-petit">Menu</nav>
+            <nav class="navi_index_grand navi_index" id="navi-grand">
                 <ul>
                     <li>
                         <a href="ordi.html">
@@ -36,10 +36,14 @@
                             L'éthique de l'IA
                         </a>
                     </li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
                     <li>
                         <a href="bibliographie.html">
                             Bibliographie
                         </a>
+                    </li>
+                    <li>
+                        <a id="navi-quitter" href="#" style="color:red;">X</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +59,7 @@
                     En effet, étant la dernière technologie prometteure, nous allons explorer les exploits récents de l'intelligence artificielle. Grâce à elle, plusieurs des tâches jadis compliquées à accomplir par nos meilleurs ordinateurs. En effet, l'intelligence artificielle elle même est une technique informatique qui introduit de nouveaux algorithmes offrant de nombreux avantages tel que le calcul impliquant des inter/extrapolations ou la capacité de s'autoévaluer et se reprogrammer. Grâce à des progrès dans les composantes ordinateurs, l'IA s'avère alors très utile dans l'autoconduite de voitures, l'Internet des Choses. Toutefois, des questions d'éthiques découlent de ces avancements au niveau de la vie privée et du droit à la protection des ses informations personnelles.
                     </p>
                 </section>
-                <img src="ai.png" alt="404">
+                <img src="ai.png" alt="404" id="ai">
             </section>
         </div>
         <footer class="bas2page">
@@ -67,15 +71,7 @@
                     </a></li>
             </ul>
         </footer>
-        <script>
-            document.getElementById('navi-petit').onclick = () => {
-                            document.getElementById('navi-petit').style.display = 'none';
-                            document.getElementById('navi-grand').style.display = 'block';
-                        }
-            document.getElementById('navi-grand').onclick = () => {
-                            document.getElementById('navi-grand').style.display = 'none';
-                            document.getElementById('navi-petit').style.display = 'block';
-                        }
+        <script src="navigation.js">
         </script>
     </body>
 </html>

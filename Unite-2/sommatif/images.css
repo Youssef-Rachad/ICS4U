@@ -1,0 +1,28 @@
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 350px;
+}
+figure img {
+    max-width:100%;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+#googleVoiture {
+    width:25rem;
+}
+#ethicIA {
+    width:30rem;
+}
+#iotAqua {
+    width:25rem;
+}

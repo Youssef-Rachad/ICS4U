@@ -1,0 +1,29 @@
+/*
+ * Ces styles servent à décorer les blocs de citations */
+
+.citation {
+    background:rgb(61, 79, 93);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    height:25vh;
+    width:50vw;
+    margin: 1rem auto;
+    padding: 0.5rem;
+}
+.citation span {
+    text-align:center;
+    font-size:1.5rem;
+    margin:auto;
+}
+.citation span:before {
+    font-size:2rem;
+    font-weight:700;
+    content:"\201c";
+}
+.citation span:after {
+    font-size:2rem;
+    font-weight:700;
+    content:"\201d";
+}
+

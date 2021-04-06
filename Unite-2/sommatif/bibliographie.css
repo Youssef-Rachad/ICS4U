@@ -36,32 +36,6 @@ section ol {
 header button:hover {
     animation: 0.5s linear 0s 1 weee;
 }
-#monNav {
-    display:none;
-    height:10vh;
-    position:absolute;
-    top:5rem;
-    width:100vw;
-}
-#monNav li {
-    float:left;
-    list-style:none;
-    font-size:1.25rem;
-    border:1px #0a1128 solid;
-
-}
-#monNav a {
-    padding:0.75rem;
-
-}
-#monNav li, #monNav a {
-    height:100%;
-    padding:1vh 0.5vw;
-
-}
-nav {
-    background:#eeeeee;
-}
 @keyframes weee {
     from {
         transform: rotate(0deg);
@@ -78,4 +52,37 @@ nav {
     border:none;
     padding:5px;
     cursor:pointer;
+}
+.navi_grand {
+    padding-left:1.5em;
+    padding-right:1.5em;
+    padding-top:1em;
+    padding-bottom:1em;
+    cursor:pointer;
+    color:#FFF;
+    display:none;
+    height:3rem;
+    position:fixed;
+    top:1vh;
+    right:1.5vw;
+    padding: 1em 1.5em;
+    background:#888;
+}
+.navi_grand ul {
+    display:flex;
+    align-items: stretch;
+    justify-content:space-between;
+}
+.navi_grand li {
+    float:left;
+    list-style:none;
+    border-left:1px #0a1128 solid;
+}
+.navi_grand a {
+    color:#fff;
+    padding:0 1rem;
+}
+/* Toute la hauteur pour rester centré */
+.navi_grand ul, .navi_grand li, {
+    height:100%;
 }

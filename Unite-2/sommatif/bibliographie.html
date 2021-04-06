@@ -2,19 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Bibliographie</title>
+        <!-- Styles seulement pour cette page -->
         <link rel="stylesheet" href="bibliographie.css">
     </head>
-    <script>
-        function ouvre_ferme(){
-                    window.getComputedStyle(document.getElementById('monNav')).display==='none'? document.getElementById('monNav').style.display = 'block' : document.getElementById('monNav').style.display = 'none';
-                }
-    </script>
 
     <body>
 
         <header>
-            <button onclick="ouvre_ferme()" id="btnNav">
+            <!-- bouton de navigation -->
+            <button id="btnNav">
                 <svg viewBox="0 0 100 80" width="40" height="40">
                     <rect width="100" height="20" rx="8" fill="white"></rect>
                     <rect y="30" width="100" height="20" rx="8" fill="white"></rect>
@@ -26,7 +23,9 @@
             </h1>
 
         </header>
-        <nav id="monNav">
+
+        <!-- Navigation -->
+        <nav id="navi_bibliographie" class="navi_grand">
             <ul>
                 <li>
                     <a href="index.html">
@@ -53,15 +52,19 @@
                         L'éthique de l'IA
                     </a>
                 </li>
+                <li>
+                    <a id="navi-quitter" href="#" style="color:red;">X</a>
+                </li>
+
             </ul>
         </nav>
 
         <main>
+            <!-- Chaque section contient une liste ordonnées de toutes les sources utilisées -->
             <section>
                 <div class="cercle"></div>
                 <h1>Paragraphe 0: Introduction</h1>
                 <ol>
-
                     <li>
                         Davydova, Olga(17 août, 2017). Applications of Artificial Neural Networks in Natural Language Processing.https://medium.com/@datamonsters/artificial-neural-networks-in-natural-language-processing-bcf62aa9151a. Consulté le XX mars 2021.
                     </li>
@@ -139,5 +142,19 @@
                 </ol>
             </section>
         </main>
+        <script>
+            //Script pour la navigation
+            //le btnNav sert a disparaître btnNav et faire apparaître la navigation
+            document.getElementById('btnNav').onclick = () => {
+                            document.getElementById('navi_bibliographie').style.display = 'block';
+                            document.getElementById('btnNav').style.display = 'none';
+                        }
+            //le bouton x sert à faire disparaître la navigation et faire apparaître btnNav
+            document.getElementById('navi-quitter').onclick = () => {
+                            document.getElementById('btnNav').style.display = 'block';
+                            document.getElementById('navi_bibliographie').style.display = 'none';
+                        }
+
+        </script>
     </body>
 </html>
