@@ -122,3 +122,59 @@ main ol {
     margin:1rem 0;
     list-style-position: inside;
 }
+/* Lorsque l'écran devient plus que 50em * 16px/em = 800px de large, on réajuste */
+@media only screen and (max-width:50em) {
+    :root {
+        font-size:14px;
+    }
+    .imgflex {
+        margin:0;
+        padding:0;
+        justify-content:center;
+        flex-direction:column;
+    }
+    p{
+        width:90%;
+    }
+    p {
+        font-size:1rem;
+    }
+    #text-section {
+        width:100%;
+    }
+    #text {
+        width:100%;
+        font-size:1rem;
+        margin:2em 0 0;
+    }
+    .navi_grand {
+        font-size:1.5rem;
+        padding:0.25rem;
+        height:50vh;
+    }
+    .navi_grand ul {
+        flex-direction:column;
+    }
+    .navi_grand li {
+        border:none;
+        color:white;
+    }
+    .navi_grand li::before {
+        content:"~>";
+    }
+    #au_cote {
+        max-width:13vw;
+    }
+    #au_cote h2 {
+        transform: rotate(-90deg);
+        width:50vh;
+        left:-125%;
+    }
+    main {
+        max-width:85vw;
+        margin:0 0 0 15vw;
+    }
+    iframe {
+        max-width:80vw;
+    }
+}

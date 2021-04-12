@@ -141,10 +141,10 @@ img {
 /* Lorsque l'écran devient plus que 50em * 16px/em = 800px de large, on réajuste */
 @media only screen and (max-width:50em) {
     :root {
-        font-size:12px;
+        font-size:14px;
     }
     .page {
-        height:120vh;
+        min-height:150vh;
         padding:0;
     }
     .imgflex {
@@ -156,12 +156,17 @@ img {
     #ai {
         min-width:50vw;
         align-self:center;
+        margin: 2rem 0 0;
+    }
+    h1 {
+        font-size:2.5rem;
     }
     h2, p{
         width:90vw;
     }
     p {
         font-size:1rem;
+        line-height:2rem;
     }
     #text-section {
         width:100%;
@@ -175,10 +180,19 @@ img {
         font-size:1.5rem;
         padding:0.25rem;
     }
-    #navi-grand ul {
+    .navi_index_grand {
+        font-size:1.5rem;
+        padding:0.25rem;
+        height:30vh;
+    }
+    .navi_index_grand ul {
         flex-direction:column;
     }
-    #navi-grand li::before {
+    .navi_index_grand li {
+        border:none;
+        color:white;
+    }
+    .navi_index_grand li::before {
         content:"~>";
     }
 }

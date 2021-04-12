@@ -26,3 +26,9 @@ figcaption {
 #iotAqua {
     width:25rem;
 }
+/* Lorsque l'écran devient plus que 50em * 16px/em = 800px de large, on réajuste */
+@media only screen and (max-width:50em) {
+    #iotReseau {
+        max-width:500px;
+    }
+}
