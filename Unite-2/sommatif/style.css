@@ -163,12 +163,15 @@ main ol {
         content:"~>";
     }
     #au_cote {
-        max-width:13vw;
+        width:13vw;
     }
     #au_cote h2 {
-        transform: rotate(-90deg);
-        width:50vh;
-        left:-125%;
+        /*transform: rotate(-90deg);*/
+        position:absolute;
+        writing-mode: vertical-rl;
+        height:80vh;
+        top:60%;
+        left:25%;
     }
     main {
         max-width:85vw;
