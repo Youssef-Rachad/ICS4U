@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <canvas id="monCanvas" width="500" height="500" style="border:1px solid black;"></canvas>
+        <script>
+            var c = document.getElementById("monCanvas");
+            var ctx = c.getContext("2d");
+            var x = 150;
+            var y = 150;
+            function cercle(x, y, rx, ry, theta, couleur){
+                            ctx.beginPath();
+                            ctx.ellipse(x, y, rx, ry, theta, 0, 2 * Math.PI);
+                            ctx.fillStyle = couleur;
+                            ctx.fill();
+                            ctx.lineWidth = 0.5;
+                            ctx.strokeStyle = '#000000';
+                            ctx.stroke();
+                        }
+            cercle(x, y, 25, 25, 0, '#872201');
+            cercle(x-6, y, 15, 16, 0, '#8a4c38');
+            cercle(x-12, y, 7, 10, 0, '#654321')
+            cercle(x-12, y, 7, 8, 0, 'black')
+            cercle(x-12, y, 5, 7, 0, 'gray')
+            cercle(x+18, y-4, 6, 10, -Math.PI/6, '#654321')
+            cercle(x+18, y-4, 6, 9, -Math.PI/6, 'black')
+            cercle(x+18, y-4, 4, 8, -Math.PI/6, 'gray')
+            cercle(x+6, y+12, 6, 6, 0, 'black')
+            cercle(x+6, y+12, 4, 5, 0, 'gray')
+            cercle(x-2, y-16, 6, 6, 0, 'black');
+            cercle(x-2, y-16, 5, 5, 0, 'gray');
+            cercle(x-8, y+18, 6, 4, Math.PI/6, 'black');
+            cercle(x-9, y+18, 6, 3, Math.PI/6, 'gray');
+            ctx.stroke();
+        </script>
+    </body>
+</html>

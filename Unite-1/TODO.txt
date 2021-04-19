@@ -1,0 +1,12 @@
+À FAIRE:
+
+- Règles de jeu
+- Générer Météores infiniment
+-? Effet sonores
+
+ACCOMPLI:
+
+- Étoiles + Vaisseau 14 avril 2021
+- Lasers 16 avril 2021
+- Touches multiples 18 avril 2021
+- Météores + Collisions + Nouveau look au vaisseau (meilleur contour pour collision) 19 avril 2021
