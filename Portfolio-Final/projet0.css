@@ -1,0 +1,6 @@
+.mini_flex>* {
+    display:inline-block;
+}
+.mini_flex_bulle {
+    margin-left:10vw;
+}

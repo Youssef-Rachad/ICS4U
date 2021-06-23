@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="projet.css">
+        <link rel="stylesheet" href="projet5.css">
+    </head>
+    <body>
+        <div class="flex_projet">
+            <div class="titre">
+                <h1 style="
+                           text-decoration:underline;
+                           text-decoration-color: #EA215A;
+                           text-decoration-thickness: .125em;
+                           text-underline-offset: 1.5px;
+                           text-decoration-style:double;
+                           text-decoration-skip-ink: none; ">
+                    &nbsp;Projet 5: Tutoriel en PHP&nbsp;&nbsp;</h1>
+                <img src="./projet5/logo.png" alt="logo de PHP" style="max-height:5vh;">
+            </div>
+            <div>
+                <p class="description">
+                L’unité 3 du cours ICS4U couvre les bases du langage PHP. Voici un bref tutoriel qui résume les concepts essentiels en se basant sur les connaissances en JavaScript acquises en ICS3U.
+                </p>
+                <ul class="concepts">
+                    <li class="lecon_entete">Les balises</li>
+                    <p class="lecon_contenu">
+                    Les balises utilisées en PHP sont &lt;?php ... ?&gt;
+                    </p>
+                    <li class="lecon_entete">Les variables</li>
+                    <p class="lecon_contenu">
+                    Les variables en PHP sont très similaires à celles en JavaScript, à l'exception des quelques détails suivants. D'abord, on déclare la variable avec un signe dollar ($ma_variable = ...). Ensuite, PHP infère la valeur assignée selon un des types de données suivants: chaîne de caractères, entier, nombre décimal ou booléen.<br><br>
+                    Pour concatener deux chaînes de caractères, ou bien une chaîne de caractères et un autre type de données, il y a deux méthodes. Soit on écrit: <br><br>"ma variable est $ma_variable";<br><br> soit on écrit <br><br>'ma variable est '.$ma_variable;<br>
+                    </p>
+                    <li class="lecon_entete">Les tableaux</li>
+                    <p class="lecon_contenu">
+                    Les tableaux sont des séries de données que l'on crée grâce à la fonction «array()». Il y a deux types de tableaux:<br>
+                    <br>
+                    1. Les tableaux numérotés que l'on accède par indexe numérique comme <br>
+                    $mon_Tableau=array(1,3,5,7);//[1,3,5,7]<br>
+                    $mon_Tableau[0]; // renvoie le premier élément: 1<br>
+                    $mon_Tableau[count($mon_Tableau)-1]; // renvoie le dernier élément: 7<br>
+                    <br>
+                    2. Les tableaux associatifs que l'on accède par clé comme <br>
+                    $mon_Tableau1=array('un'=&gt;1,'3'=&gt;trois','cinq'=&gt;5,'dernier'=&gt;7); <br>
+                    $mon_Tableau['un']; // renvoie la valeur de 'un' 1<br>
+                    </p>
+                    <li class="lecon_entete">Les fonctions</li>
+                    <p class="lecon_contenu">
+                    Les fonctions en PHP ressemblent fortement à celles en JavaScript, à l'exception des paramètres qui doivent être précédés d'un $ (selon la syntaxe des variables). Par exemple <br>
+                    function maFonction($mon_parametre){<br>
+                    ... ;<br>
+                    return ... ;<br>
+                    }<br>
+                    </p>
+                    <li class="lecon_entete">La portée</li>
+                    <p class="lecon_contenu">
+                    En PHP, la portée est plus stricte qu'en JavaScript. Une variable déclarée hors d'une fonction ne peut être accédée dans la fonction en utilisant le mot clé «global» et de même pour les variables assignées dans une fonction et accédée hors (à moins qu'elle soit retournée grâce à «return»).
+                    Aussi, il y a des variables dites superglobales. Ce sont souvent des tableaux associatifs et suivent la syntaxe $VARIABLE. Le contenu des superglobales peut être accédé n'importe où dans le fichier. Par exemple: $GLOBALS contient toutes les variables globales (pas besoin d'utiliser le mot clé «global») et $_POST contient les données d'une requête HTTP par méthode POST.
+                    </p>
+                    <li class="lecon_entete">include()</li>
+                    <p class="lecon_contenu">
+                    La fonction include() prend l'URL vers un fichier, souvent un document HTML, et affiche sont contenu comme si tout le contenu du fichier était présent à cet endroit. Cette fonction est très utile pour des contenus tels les barres de navigation, les entêtes, les logos et tout autre contenu qui répété plusieurs fois.
+                    </p>
+                </ul>
+            </div>
+            <div>
+                <div><p>En créant des serveurs, on apprend à manier le système WAMP, soit un serveur Apache, qui stocke des données avec MySQL, qui est programmé avec PHP et qui est hébergé sur Windows. UWAMP est un logiciel qui permet de gérer tous ceci sans avoir à installer et configurer chaque composant individuellement. De plus, PHPMyAdmin permet de visualiser les bases de données du serveur.</p></div>
+                <img src="./projet5/wamp_stack.png" alt="uwamp" style="max-height:50vh">
+                <img src="./projet5/uwamp.png" alt="uwamp" style="max-height:50vh">
+                <img src="./projet5/phpmyadmin.png" alt="uwamp" style="max-height:50vh">
+            </div>
+        </div>
+        <footer>
+            <nav class="navbar">
+                <ul class="navbar_nav">
+                    <li class="navbar_objet">
+                        <a href="projet4.html" class="nav_link">
+                            <svg class="inverse"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <g>
+                                <path fill="currentColor" d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"></path>
+                                <path fill="currentColor" d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar_objet">
+                        <a href="projet6.html" class="nav_link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <g>
+                                <path fill="currentColor" d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"></path>
+                                <path fill="currentColor" d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

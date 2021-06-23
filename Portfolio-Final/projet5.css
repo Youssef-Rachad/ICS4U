@@ -1,0 +1,47 @@
+.titre {
+    max-width:50vw;
+    display:flex;
+    justify-content:space-between;
+    margin: 1rem 0 3rem;
+}
+.concepts {
+    margin: 0.25rem 0 2rem;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.lecon_entete {
+    position: relative;
+    margin:1rem 0 0;
+    cursor:pointer;
+    text-decoration:underline;
+    text-decoration-color: #EA215A;
+    text-decoration-thickness: .125em;
+    text-underline-offset: 1.5px;
+    text-decoration-style:wavy;
+    text-decoration-skip-ink: none;
+}
+
+.lecon_contenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50vw;
+    max-width: 95vw;
+    min-height: 50vh;
+    max-height: 75vh;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,150,0.5);
+    border: rgb(0,0,150) 3px dotted;
+    padding: 0.875rem 1rem;
+
+    z-index:1;
+}
+
+.lecon_entete:hover + .lecon_contenu, .lecon_contenu:hover {
+    display: block;
+    position:absolute;
+    left:5vw;
+    bottom:30%;
+    transform:translateY(30%);
+    max-width:75vw;
+}

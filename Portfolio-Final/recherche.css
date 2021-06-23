@@ -1,0 +1,59 @@
+/* Arriere-plan */
+.arriere_plan_portfolio{
+    animation:arriere_plan_portfolio 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #009dff 33%, #00CEA0 66%, #00ff40 100%);
+    position:fixed;
+    bottom:0;
+    top:0;
+    left:-50%;
+    right:-50%;
+    opacity:.5;
+    z-index:-1;
+}
+.arriere_plan_portfolio1 {
+    animation:arriere_plan_portfolio 4s ease-in-out infinite alternate-reverse;
+    background-image: linear-gradient(-60deg, #009dff 33%, #00CEA0 66%, #00ff40 100%);
+    position:fixed;
+    bottom:0;
+    top:0;
+    left:-50%;
+    right:-50%;
+    opacity:.5;
+    z-index:-1;
+}
+@keyframes arriere_plan_portfolio {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+.recherche {
+    margin-left: auto;
+}
+.apropos {
+    margin-right: auto;
+}
+.mots_cles {
+    position:absolute;
+    top:25%;
+    left:10%;
+}
+.mot_cle_conteneur {
+    background:white;
+    border-radius:36px;
+    margin:0.25rem;
+}
+.mot_cle {
+    padding:0.25rem 1rem 0 1rem;
+    display:flex;
+    width:10vw;
+    color:#232323;
+}
+.mot_cle_octothorpe {
+}
+.mot_cle_mot {
+    font-size:2rem;
+}
