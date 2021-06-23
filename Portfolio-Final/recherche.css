@@ -40,6 +40,7 @@
     position:absolute;
     top:25%;
     left:10%;
+    max-height:75vh;
 }
 .mot_cle_conteneur {
     background:white;
@@ -49,10 +50,13 @@
 .mot_cle {
     padding:0.25rem 1rem 0 1rem;
     display:flex;
-    width:10vw;
+    max-width:20vw;
+    max-height:10vh;
     color:#232323;
 }
 .mot_cle_octothorpe {
+    max-width:3vw;
+    max-height:5vh;
 }
 .mot_cle_mot {
     font-size:2rem;
